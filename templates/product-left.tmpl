@@ -1,0 +1,18 @@
+<div class="mtwocol__left products__left">
+  <div>
+    <div class="products__header-img" style="background-image: url('/img/circuits.jpg')"></div>
+    <h3> 产品中心 </h3><hr>
+    <p>
+      我们一直致力于打造“区块链+物联网”行业领先产品。这里仅列出了部分代表性产品，更多产品可<a href="/page/contactus">联系我们洽谈</a> 。
+    </p>
+
+    {% for prod in ProductList %}
+    {% if prod.ID == product.ID %}
+    <span class="sidenav__link--active"> {{prod.Title}} </span><br>
+    {% else %}
+    <a class="sidenav__link" href="/page/product?id={{prod.ID}}"> {{prod.Title}} </a>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+</div>

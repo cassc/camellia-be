@@ -1,0 +1,19 @@
+<div class="mtwocol__left products__left">
+  <div>
+    <div class="products__header-img" style="background-image: url('/img/absm.jpg')"></div>
+    <h3> 解决方案 </h3><hr>
+    <p>
+      我们为客户提供一站式软硬件结合服务方案，可针对企业的具体情况，针对不同的应用场景提出个性化定制服务，设计硬件设备及软件系统，提供从数据库到云平台及App的整套开发服务。
+    </p>
+
+    {% for sol in SolutionList %}
+    {% if sol.ID == solution.ID %}
+    <span class="sidenav__link--active"> {{sol.Title}} </span><br>
+    {% else %}
+    <a class="sidenav__link" href="/page/solution?id={{sol.ID}}"> {{sol.Title}} </a>
+    {% endif %}
+    {% endfor %}
+    
+  </div>
+  
+</div>

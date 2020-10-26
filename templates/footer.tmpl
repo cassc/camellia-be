@@ -1,0 +1,55 @@
+<footer class="footer">
+  <div class="footer__bodyphone">
+    <div>__title.full__</div>
+    <div><a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备18121805号</a></div>
+  </div>
+  <div class="footer__body">
+    <div>
+      <h3><i class="fa fa-map-marker"></i> 联系我们</h3>
+      <p class="footer-contact">
+        地址：__contact.address__<br>
+        电话：<span class="footer__phone">__contact.phone__</span> (__contact.name__)<br>
+        电子邮箱：__contact.email__<br>
+      </p>
+    </div>
+    <div>
+      <h3><i class="fab fa-product-hunt"></i> 产品中心</h3>
+      {% for prod in ProductList %}
+      <p> <a href="/page/product?id={{prod.ID}}">{{prod.Title}} </a></p>
+      {% endfor %}
+    </div>
+    <div>
+      <h3><i class="fab fa-servicestack"></i> 解决方案</h3>
+      {% for sol in SolutionList %}
+      <p> <a href="/page/solution?id={{sol.ID}}">{{sol.Title}} </a></p>
+      {% endfor %}
+    </div>
+    <div>
+      <h3><i class="fa fa-heart"></i> 关于我们</h3>
+      <p> <a href="/page/aboutus">公司简介</a></p>
+      <p> <a href="/page/contactus">联系方式 </a></p>
+      <p class="footer__beian"><a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备18121805号</a></p>
+    </div>    
+  </div>
+</footer>
+
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>

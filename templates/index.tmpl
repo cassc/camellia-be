@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}
+ 
+  <body>
+    
+    {% include "nav.tmpl" %}
+    <section class="home__carousel section-global-wrapper"> 
+      <div >
+        <div class="row">
+          <div id="carousel-1" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ol class="carousel-indicators visible-lg">
+              <li data-target="#carousel-1" data-slide-to="0" class=""></li>
+              <li data-target="#carousel-1" data-slide-to="1" class="active"></li>
+              <li data-target="#carousel-1" data-slide-to="2" class=""></li>
+            </ol>
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner home__top-slides" role="listbox">
+              <!-- Begin Slide 1 -->
+              <div class="item">
+                <div class="home__carousel-img" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('assets/img/slider/slide1.jpg');"></div>
+                <div class="home__carousel-caption carousel-caption">
+                  <h3 class="carousel-title">RFID解决方案</h3>
+                  <p class="carousel-body">全套RFID解决方案助您快速开发各类应用</p>
+                </div>
+              </div>
+              <!-- End Slide 1 -->
+
+              <!-- Begin Slide 2 -->
+              <div class="item active">
+                <div class="home__carousel-img" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('assets/img/slider/slide2.jpg');"></div>
+                <div class="home__carousel-caption carousel-caption">
+                  <h3 class="carousel-title">LORA物联网应用</h3>
+                  <p class="carousel-body">自定义LORA轻型协议、自有云端平台，满足多种使用场景</p>
+                </div>
+              </div>
+              <!-- End Slide 2 -->
+
+              <!-- Begin Slide 3 -->
+              <div class="item">
+                <div class="home__carousel-img" style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('img/blockchain.jpg');"></div>
+                <div class="home__carousel-caption carousel-caption">
+                  <h3 class="carousel-title">Blockchain Ready!</h3>
+                  <p class="carousel-body">“区块链”+“物联网”解决方案</p>
+                </div>
+              </div>
+              <!-- End Slide 3 -->
+            </div>
+            
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-1" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#carousel-1" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="section-2">
+      <div class="section-2__body">
+        <div class="section-2__header">
+          <h3 class="services-header-title">产品展示</h3>
+          <a href="/page/products"><i class="fas fa-angle-right"></i> 更多</a>
+        </div>
+        
+        <div class="section-2__grid">
+          <div class="section-2__group-wraper">
+            <a href="/page/product?id=3" class="section-2__group " data-wow-offset="40"
+                 style="background-image: url('/img/prod-rfid-temp.jpg')">
+              <div class="section-2__group-content">
+                <h4>RFID温度标签</h4>
+                <p>满足医药、食品、环境检测等多种使用场景</p>
+              </div>
+            </a>
+          </div> 
+
+          <div class="section-2__group-wraper">
+            <a href="/page/product?id=5" class="section-2__group " data-wow-offset="40"
+                 style="background-image: url('/img/01.6.png')">
+              <div class="section-2__group-content">
+                <h4>手机智能额温计</h4>
+                <p>替代传统额温枪的便携式智能温度测量计</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="section-2__group-wraper">
+            <a href="/page/product?id=4" class="section-2__group " data-wow-offset="40"
+                 style="background-image: url('/img/middle-left.png')">
+              <div class="section-2__group-content">
+                <h4>区块链硬件钱包</h4>
+                <p>多币种、多重安全保障硬件钱包</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2 section-2--service">
+      <div class="section-2__body">
+        <div class="section-2__header">
+          <h3 class="services-header-title">方案与服务</h3>
+          <a href="/page/solutions"><i class="fas fa-angle-right"></i> 更多</a>
+        </div>
+
+        <div class="section-2__grid">
+          <div class="section-2__group-wraper">
+            <a href="/page/solution?id=1" class="section-2__group  bg-cover" data-wow-offset="40"
+                 style="background-image: url('/img/sol-rfid-warehouse.jpeg')">
+              <div class="section-2__group-content">
+                <h4>RFID库存管理服务</h4>
+                <p>让您轻松管理产品的生产、运输、储存及盘点</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="section-2__group-wraper">
+            <a href="/page/solution?id=2" class="section-2__group  bg-cover" data-wow-offset="40"
+                 style="background-image: url('/img/rfidapparel.jpg')">
+              <div class="section-2__group-content">
+                <h4>RFID服装管理系统</h4>
+                <p>基于物联网技术的样衣管理系统</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="section-2__group-wraper">
+            <a href="/page/solution?id=3" class="section-2__group  bg-cover" data-wow-offset="40"
+                 style="background-image: url('/img/blockchain-iot.jpg')">
+              <div class="section-2__group-content">
+                <h4>“物联网+区块链”可追溯防伪系统</h4>
+                <p>将区块链技术融合于物联网系统</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-2 section-2--service">
+      <div class="section-2__body">
+        <div class="section-2__header">
+          <h3 class="services-header-title">关于我们</h3>
+          <a href="/page/aboutus"><i class="fas fa-angle-right"></i> 更多</a>
+        </div>
+
+        <div class="home__aboutus">
+          <div class="  home__aboutus-img"></div>
+          <div class=" home__aboutus-content">
+            <p>
+              <strong>__title.full__</strong>是深圳南山区一家集物联网产品和方案软硬件研发、生产和销售于一体的物联网科技企业。公司致力于物联网一体化解决方案和产品。经过长期积累，现有轻量化lora网关，全协议NFC读卡器、高性价比超高频RFID读卡器及手持设备、无源RFID温度标签、定位轨迹追踪系统、RFID资产管理系统及云平台等产品和方案、物联网+区块链防伪溯源等解决方案。
+            </p>
+
+            <p>
+              本公司团队专业，成员大部分毕业于清华大学、新加坡国立大学、电子科技大学等高校，相关理论基础扎实；具备华为2012实验室、TPLINK、中兴通讯、腾讯等公司近10年开发经历，实践经验丰富。公司从需求导入、研发设计、稳定性调试等多维度优化产品和方案，参与了多个客户方案委托开发、产品定制和生产等。
+            </p>
+            
+            <p>
+              公司致力于为国内外众多客户提供极强竞争力的产品方案与ODM服务。目前，公司已为比亚迪电子、国家电网等提供解决方案。自研产品远销印度、新加坡、德国、澳大利亚等国家，产品和方案应用到农业、电力、畜牧、服装、冷链物流、医药高档酒品高价值产品防伪等多领域。
+            </p>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section-2 section-2--service">
+      <div class="section-2__body">
+        <div class="section-2__header">
+          <h3 class="services-header-title">行业新闻</h3>
+          <a href="/page/news-list"><i class="fas fa-angle-right"></i> 更多</a>
+        </div>
+
+        <div class="home__news">
+          
+          {% for nw in NewsList %}
+          <a href="/page/news?id={{nw.ID}}" >
+            <h4>{{nw.Title}}</h4>
+            <p>{{nw.Abstract}}</p>
+          </a>
+          {% endfor %}
+
+
+        </div>
+      </div>
+    </section>
+
+    {% include "footer.tmpl" %}
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}    
+ 
+  <body>
+    {% include "nav.tmpl" %}    
+
+    
+
+    <div class="mtwocol__content">
+      <div class="mtwocol__left products__left">
+        <div>
+          <div class="products__header-img" style="background-image: url('/img/news.jpg')"></div>
+          <h3> 行业新闻 </h3><hr class="aboutus__rule">
+          <p>
+            我们一直致力于打造“区块链+物联网”行业领先产品。在这里为您带来最新的重要行业资讯。
+          </p>
+          
+          {% for nw in NewsList %}
+          <a class="news__navitem" href="/page/news?id={{nw.ID}}"> {{nw.Title}} </a><br>
+          {% endfor %}
+        </div>
+        
+      </div>
+      <div class="mtwocol__right news__list">
+
+
+        {% for nw in NewsList %}
+
+        <a class="news__article" href="/page/news?id={{nw.ID}}">
+          <h3 class="news__article-title" >
+            <div>{{nw.Title}}</div>
+            <div class="news__article-date">{{nw.Date}}</div>
+          </h3>
+          <hr>
+          <p>
+            {{nw.Abstract}}
+          </p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    
+    {% include "footer.tmpl" %}    
+
+  </body>
+</html>

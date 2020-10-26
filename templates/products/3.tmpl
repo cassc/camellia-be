@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}
+  
+  <body>
+    {% include "nav.tmpl" %}    
+
+
+    <div class="mtwocol__content">
+      {% include "product-left.tmpl" %}
+
+      <div class="news__article wow animated fadeIn">
+        <h1 class="news__article-title" >
+          <div>{{product.Title}}</div>
+        </h1>
+        <hr>
+        <div class="news__article-content">
+          <h4 class="modalprod__title"></h4>
+          <div class="modalprod__img" style="background-image:url('/img/rfid-temperature.png')"> </div>
+          <div class="modalprod__section-holder">
+            <div class="modalprod__section"> 
+              <div>
+                <strong>__title.en__ RFID温度标签__title.en__-T1901</strong>是__title.simple__自主研发、生产、销售的<strong>超高频RFID温感无源标签</strong>，创新性的结合物联网技术，既可识别身份，也可感知温度。兼具绿色环保、成本低、安全性高，可同时结合区块链技术，使数据造假和标签仿冒几无可能，是冷链运输、餐饮配送、电力能源、医疗健康、畜牧仓储等各类温控应用的理想方案。
+              </div>
+            </div>
+            <div class="modalprod__section"> 
+              <h3>特色功能</h3>
+              <ul>
+                <li>RFID单模 或 RFID+温感 双模</li>
+                <li>RFID直接无线读取温度值，免拆箱、免维护</li>
+                <li>EAS功能（防窃）</li>
+                <li>支持扩展TID</li>
+                <li>支持爆炸写</li>
+                <li>读写距离远近可调</li>
+                <li>标签选中指示</li>
+                <li>高、低温越限告警</li>
+                <li>
+                  测温精度
+                  <ul>
+                    <li>高精度区间：-30°C~+90°C，精度：±0.1°C</li>
+                    <li>低精度 区间：-40°C ~+125°C，精度：±0.5°C</li>
+                  </ul>
+                </li>
+                <li>多达10万次写操作</li>
+                <li>多达10年以上寿命</li>
+                <li>成本低廉，与传统方案相比，有数量级的优势</li>
+              </ul>
+
+              <div class="modalprod__section"> 
+                <h3> 技术参数 </h3>
+                
+                <div id="params-1" class="modalprod__twocolparams">
+                  <div>频段</div><div>UHF 840MHz~960MHz</div>
+                  <div>标准</div><div>EPC C1 G2/ISO18000-6C</div>
+                  <div>国标</div><div>GB29768-2013</div>
+                  <div>军标</div><div>GJB7377.1-2011V2.0</div>
+                  <div>产品描述</div><div>RFID TAG，标签</div>
+                </div>
+              </div>
+
+              <img class="modalprod__cimg" src="/img/rfid-scheme.png"/>
+
+
+              <div class="modalprod__section"> 
+                <h3> 产品规格 </h3>
+                
+                <div id="params-1" class="modalprod__twocolparams">
+                  <div>工作频段</div><div>超高频UHF，840MHz~960MHz</div>
+                  <div>标准/协议</div><div>支持单一标准或多合一标准<br>
+                    1）EPC Class1 Gen2，ISO18000-6C<br>
+                    2）国标 GB29768-2013<br>
+                    3）特殊行业标准，如GJB7377.1-2011<br></div>
+                  <div>编码容量</div><div>从小容量低成本的96bit EPC ,到大容量的512bit EPC物流专用，以及3.6Kbit用户区的特殊行业等各种编码长度，任意选择。</div>
+                  <div>封装材质</div><div>纸质、PET、PU、PVC、PI耐高温、ABS、陶瓷等</div>
+                  <div>工作模式</div><div>只读，或读/写，防冲撞多标签读取</div>
+                  <div>读取距离</div><div>~15米 (与读写器性能及工作环境有关)</div>
+                  <div>通讯方式</div><div>仅RFID，加NBIOT，BLE，LoRa等</div>
+                  <div>大小尺寸</div><div>一般通用尺寸，可定制</div>
+                  <div>工作温度</div><div>-10°C ~ +55°C 至 -40°C ~ +125°C</div>
+                  <div>存储温度</div><div>-55°C ~ +150°C</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          
+          <div class="modal-footer">
+            <a href="/page/contactus" class="btn btn-primary">联系购买</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "footer.tmpl" %}
+    <script src="/js/products.js"></script>
+  </body>
+</html>

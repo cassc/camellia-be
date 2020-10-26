@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}
+  
+  <body>
+    {% include "nav.tmpl" %}    
+
+
+    <div class="mtwocol__content">
+      {% include "product-left.tmpl" %}
+      <div class="mtwocol__right">
+        <div class="products__grid">
+          {% for prod in ProductList %}
+          <div>
+            <a class="products__item wow animated fadeIn" style="background-image: url('/img/{{prod.Hcover}}')"
+               href="/page/product?id={{prod.ID}}">
+              <div class="products__item-content">
+                <h4>{{prod.Title}}</h4>
+                <p>{{prod.Subtitle}}</p>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% include "footer.tmpl" %}
+    <script src="/js/products.js"></script>
+  </body>
+</html>

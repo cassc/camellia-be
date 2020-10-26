@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}
+  
+  <body>
+    {% include "nav.tmpl" %}    
+
+
+    <div class="mtwocol__content">
+      {% include "product-left.tmpl" %}
+      <div class="mtwocol__right">
+        <div class="news__article wow animated fadeIn">
+          <h1 class="news__article-title" >
+            <div>{{product.Title}}</div>
+          </h1>
+          <hr>
+          <div class="news__article-content">
+            <div class="modalprod__img" style="background-image:url('/img/prod-rfid.png')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section"> 
+                <div>
+                  __title.simple__研发的超高频手持扫描机产品，融合了强大的UHF超高频读写功能和条码扫描功能，可以搭配各个厂家的Android 和iOS智能手机或智能设备终端使用，灵活便捷，性能卓越，广泛适用于服装盘点、仓库管理、车辆管理、金融管理等领域的应用。
+                </div>
+              </div>
+              <div class="modalprod__section"> 
+                <h5>产品特点</h5>
+                <ul>
+                  <li>出色的超高频读写性能（最远15米） </li>
+                  <li>大容量电池 </li>
+                  <li> 握感舒适，符合人体工学 </li>
+                  <li> 能与各智能手机/终端搭配使用 </li>
+                  <li> 支持各种协议的二维码扫描头 </li>
+                  <li> 稳定的蓝牙及USB连接 </li>
+                  <li> 支持快速二次开发，可与各种行业的ERP系统进行对接 </li>
+                </ul>
+                
+              </div>
+
+              
+            </div>
+
+            <div class="modal-footer">
+              <a href="/page/contactus" class="btn btn-primary">联系购买</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    
+    
+    <!-- Modal -->
+    {% include "footer.tmpl" %}
+    <script src="/js/products.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}
+  
+  <body>
+    {% include "nav.tmpl" %}    
+
+
+    <div class="mtwocol__content">
+      {% include "product-left.tmpl" %}
+
+      <div class="news__article wow animated fadeIn">
+        <h1 class="news__article-title" >
+          <div>{{product.Title}}</div>
+        </h1>
+        <hr>
+        <div class="news__article-content">
+          <div class="modalprod__img" style="background-image:url('/img/lora-board.jpeg')"> </div>
+          <div class="modalprod__section-holder">
+            <div class="modalprod__section"> 
+              <div>
+                __title.en__ Lora系统包含网关（__title.en__-GT100W/__title.en__-GT100G），节点（__title.en__-ND100）及云平台。本系统集灵活、高效、性价比于一身，可广泛应用于农业、花园智能控制、畜牧管理以及三防行业。
+              </div>
+            </div>
+
+            <div class="modalprod__section"> 
+              <h5>产品特点</h5>
+              <ul>
+                <li><strong>扩展性好</strong>
+                  可根据使用场景灵活增减网关及节点，网络扩展性好。
+                </li>
+                <li><strong>部署成本低</strong>
+                  __title.en__ Lora系统网关（__title.en__-GT100W/__title.en__-GT100G）成本显著低于传统LoraWAN网关，性价比优势明显。
+                  Lora免通信资费，有效降低整体运营成本。
+                </li>
+                <li><strong>长距离通信</strong> 专业调优，普通距离高达10Km，完美解决传统方案远距通信问题。 </li>
+                <li><strong>低功耗</strong> 系统超低功耗设计、发射功率多级可调，在超低功耗下实现超长距离传输，普通电池可以数年不用更换 </li>
+                <li><strong>超高的接收灵敏度</strong>
+                <li><strong>完整云平台服务系统</strong> 集成MQTT等主流协议，支持用户定制私有协议，提供Json数据接口；可提供云平台，也可助用户快速部署至用户私有云主机 </li>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="modalprod__section"> 
+              <h5>技术优势</h5>
+              <ul>
+                <li>高效自定义协议</li>
+                <li>可提供云平台接口，也可提供整套解决方案</li>
+                <li>网关集成MQTT协议支持，方便二次开发</li>
+                <li>客户可选2G/3G/4G/WIFI等网络通讯，部署方便灵活</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <a href="/page/contactus" class="btn btn-primary">联系购买</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include "footer.tmpl" %}
+    <script src="/js/products.js"></script>
+  </body>
+</html>

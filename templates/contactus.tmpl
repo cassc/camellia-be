@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-5.7.2-web/css/all.min.css">
+    
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=9R7QOoAdYL6yn9hpzMlzBggUtibvRCiW"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+    <title>{% if Title %}{{Title}}{% else %}__title.en__ - __title.simple__{% endif %}</title>
+  </head>
+ 
+  <body>
+    {% include "nav.tmpl" %}
+
+    <section class="contactus__mapwrapper"> 
+      <div id="contactus-map"></div>
+    </section>
+
+    <section class="contactus__content">
+      <h3>__title.full__</h3>
+      <div class="contactus__forms">
+        <div>
+          <h4>联系方式</h4>
+          <div class="contactus__info">
+            <p>
+              公司地址：<span>__contact.address__</span>
+            </p>
+            <p>电话：<span class="contactus__highlight-contact">__contact.phone__</span> (__contact.name__)</p>
+            <p>Email：<span class="contactus__highlight-contact">__contact.email__</span></p>
+          </div>
+          <h4 class="contactus__alititle">__shop.title__</h4>
+          <div class="contactus__info">
+            <p><a target="_blank" href="__shop.link__">
+                <span class="contactus__highlight-contact contactus__highlight-contact--1688">__shop.link__</span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contactus__feedback-sep"></div>
+        <div class="contactus__feedback">
+          <h4>在线反馈</h4> 
+          <form >
+            <fieldset>
+              <div class="form-group form-group-username">
+                <label class="control-label" for="username">姓名</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="请输入您的姓名">
+              </div>
+              <div class="form-group form-group-email">
+                <label class="control-label" for="email">Email</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="请输入您的电子邮箱">
+              </div>
+              <div class="form-group form-group-email">
+                <label class="control-label" for="phone">手机号</label>
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="请输入您的手机号">
+              </div>
+              <div class="form-group form-group-message">
+                <label class="control-label" for="message">消息</label>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+              </div>           
+              <button type="button" id="submitFeedback" class="btn btn-primary" >提交</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body modalprod">
+            <h4 class="modalprod__title"></h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">确认</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    {% include "footer.tmpl" %}
+    <script src="/js/contactus.js"></script>
+  </body>
+</html>

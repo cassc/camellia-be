@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}
+  
+  <body>
+
+    {% include "nav.tmpl" %}
+
+    <div class="mtwocol__content">
+      {% include "solution-left.tmpl" %}
+      
+      <div class="mtwocol__right">
+        <div class="products__grid">
+          {% for solution in SolutionList %}
+          <div>
+            <a class="products__item wow animated fadeIn bg-cover" style="background-image: url('/img/{{solution.Hcover}}')"
+               href="/page/solution?id={{solution.ID}}">
+              <div class="products__item-content">
+                <h4>{{solution.Title}}</h4>
+                <p>{{solution.Subtitle}}</p>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        
+      </div>
+    </div>
+
+    {% include "footer.tmpl" %}
+  </body>
+</html>

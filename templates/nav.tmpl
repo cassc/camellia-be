@@ -1,0 +1,46 @@
+<nav class="navbar navbar-bright">
+  <input type="checkbox" class="navbar__checkbox" id="navi-toggle">
+  <div class="navbar__body">
+    <div class="navbar-logo-box">
+      <a href="/" class="navbar__text-logo"><span>__title.en__</span></a>
+    </div>
+    <div class="navbar__page-title">
+      <label for="navi-toggle" class="navbar__menu__button">
+        <div class="navbar__menu-icon"></div>
+      </label>
+    </div>
+    <div class="navbar-menu-holder">
+      <div class="navbar-menu-item">
+        <a class="navbar-menu__link {% ifequal Page "index" %}navbar-menu__link--active{% endifequal %}" href="/">首页</a>
+      </div>
+      <div class="navbar-menu-item">
+        <a class="navbar-menu__link {% ifequal Page "products" %}navbar-menu__link--active{% endifequal %}" href="/page/products">产品中心</a>
+      </div>
+      <div class="navbar-menu-item">
+        <a class="navbar-menu__link {% ifequal Page "solutions" %}navbar-menu__link--active{% endifequal %}" href="/page/solutions">解决方案</a>
+      </div>
+      <div class="navbar-menu-item">
+        <a class="navbar-menu__link {% ifequal Page "news" %}navbar-menu__link--active{% endifequal %}" href="/page/news-list">行业新闻</a>
+      </div>
+      <div class="navbar-menu-item">
+        <a class="navbar-menu__link {% ifequal Page "aboutus" %}navbar-menu__link--active{% endifequal %}" href="/page/aboutus">关于我们</a>
+      </div>
+      <div class="navbar-menu-item">
+        <a class="navbar-menu__link {% ifequal Page "contactus" %}navbar-menu__link--active{% endifequal %}" href="/page/contactus">联系我们</a>
+      </div>
+      <div class="navbar-menu-item">
+        <a class="navbar-menu__link" href="__ensite__">
+          <i class="fas fa-globe-asia"></i> English
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="navbar__expand">
+    <a class="navbar__expand-link {% ifequal Page "index" %}navbar__expand-link--active{% endifequal %}" href="/">首页</a>
+    <a class="navbar__expand-link {% ifequal Page "products" %}navbar__expand-link--active{% endifequal %} " href="/page/products">产品中心</a>
+    <a class="navbar__expand-link {% ifequal Page "solutions" %}navbar__expand-link--active{% endifequal %}" href="/page/solutions">解决方案</a>
+    <a class="navbar__expand-link {% ifequal Page "news" %}navbar__expand-link--active{% endifequal %}" href="/page/news-list">行业新闻</a>
+    <a class="navbar__expand-link {% ifequal Page "aboutus" %}navbar__expand-link--active{% endifequal %}" href="/page/aboutus">关于我们</a>
+    <a class="navbar__expand-link {% ifequal Page "contactus" %}navbar__expand-link--active{% endifequal %}" href="/page/contactus">联系我们</a>
+  </div>
+</nav>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "head.tmpl" %}
+  
+  <body>
+
+    {% include "nav.tmpl" %}
+
+    <div class="mtwocol__content">
+      {% include "solution-left.tmpl" %}
+
+
+      <div class="mtwocol__right">
+        <div class="news__article wow animated fadeIn">
+          <h1 class="news__article-title" >
+            <div>{{solution.Title}}</div>
+          </h1>
+          <hr>
+          <div class="news__article-content">
+            <div class="modalprod__img" style="background-image:url('/img/env.jpg')"> </div>
+            <div class="modalprod__section-holder">
+              <div class="modalprod__section">
+                <p>LoRa是一种专用于无线电调制调解的技术，它具有低功耗、易组网、成本低、传输距离远等优势。LoRa节点可以满足长时间的运作，使用电池供电可使用达数年。LoRa技术已在多个国家广泛部署。</p>
+                <strong>__title.simple__提供的__title.en__ LoRa系统包含网关（__title.en__-GT100W及__title.en__-GT100G）、节点（__title.en__-ND100）及云平台整套系统，用户即可以可开箱即用，也可在现有基础上作二次开发。</strong>
+                <p>__title.en__ LoRa解决方案具有以下特点：</p>
+                <ul>
+                  <li><strong>成本低：</strong>网关与节点可定制，性价比高</li>
+                  <li><strong>方便二次开发：</strong>云平台接口以JSON或XML形式提供，用户应用开发开发极为方便。</li>
+                  <li><strong>配置方便：</strong>节点与网关自组网，节点上电即可使用，无须再对节点逐一配置</li>
+                  <li><strong>多种应用场景：</strong>基于LoRa提供多种应用方案供用户选择</li>
+                </ul>
+              </div>
+
+
+              <div class="modalprod__section">
+                <h5>LoRa的系统架构</h5>
+
+                __title.simple__独立开发的整套LoRa系统架构如下：
+                
+                <div class="modalprod__section-large-image">
+                  <img  src="/img/LoRaWAN-Overview.png">
+                </div>
+              </div>
+              
+              <div class="modalprod__section">
+                <h5>LoRa的应用场景</h5>
+
+                <p>凭借其成本低、可大规模部署、可电池供电，及技术成熟的特点，LoRa可广泛用于以下使用场景。</p>
+
+                
+                
+                <div class="modalprod__section-large-image">
+                  <img  src="/img/lora.png">
+                </div>
+
+                
+              </div>
+            </div>
+            
+            <div class="modal-footer">
+              <a href="/page/contactus" class="btn btn-primary">联系购买</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    {% include "footer.tmpl" %}
+  </body>
+</html>
