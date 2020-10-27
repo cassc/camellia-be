@@ -1,24 +1,26 @@
 package main
 
-import "github.com/kataras/iris"
-import _ "github.com/mattn/go-sqlite3"
-import "goemt/model"
-import "goemt/service"
-import "goemt/config"
-import "database/sql"
-import "log"
-import "strconv"
-import "fmt"
+import (
+	"database/sql"
+	"fmt"
+	"goemt/config"
+	"goemt/model"
+	"goemt/service"
+	"log"
+	"strconv"
+
+	"github.com/kataras/iris"
+	_ "github.com/mattn/go-sqlite3"
+)
 
 func main() {
 	app := iris.New()
 	app.RegisterView(iris.Django(config.TemplateRoot, ".tmpl").Reload(true))
 
-	// app.StaticWeb("/js", "static/js")
-	// app.StaticWeb("/css", "static/css")
-	// app.StaticWeb("/img", "static/img")
-	// app.StaticWeb("/assets", "static/assets")
-	// app.StaticWeb("/", "static/")
+	app.StaticWeb("/js", "../fe/js")
+	app.StaticWeb("/css", "../fe/css")
+	app.StaticWeb("/img", "../fe/img")
+	app.StaticWeb("/assets", "../fe/assets")
 
 	app.Get("/", handleGetIndex)
 	app.Post("/emt-feedback", handleEmtFeedback)
@@ -31,7 +33,7 @@ func main() {
 	app.Get("/page/aboutus", handleGetPageAboutus)
 	app.Get("/page/contactus", handleGetPageContactus)
 
-	app.Run(iris.Addr("localhost:" + config.Port))
+	app.Run(iris.Addr("0.0.0.0:" + config.Port))
 }
 
 func attachBaseInfo(ctx iris.Context) {
